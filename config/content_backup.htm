@@ -1,15 +1,18 @@
 <h1>About</h1>
-<p>此內容管理系統以 <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 作為 submodule 運作, 可以選定對應的版本運作, cmsimde 可以持續改版, 不會影響之前設為 submodule, 使用舊版 cmsimde 模組的內容管理相關運作.</p>
-<h4>利用 cmsimde 建立靜態網誌方法:</h4>
-<p>1. 在 github 建立倉儲, git clone 到近端</p>
-<p>2. 參考 <a href="https://github.com/mdecourse/newcms">https://github.com/mdecourse/newcms</a>, 加入除了 cmsimde 目錄外的所有內容</p>
-<p>以 git submodule add <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> cmsimde</p>
-<p>建立 cmsimde 目錄, 並從 github 取下子模組內容.</p>
-<p>3.在近端維護時, 更換目錄到倉儲中的 cmsimde, 以 python wsgi.py 啟動近端網際伺服器.</p>
-<p>動態內容編輯完成後, 以 generate_pages 轉為靜態內容, 以 git add commit 及 push 將內容推到遠端.</p>
-<p>4. 之後若要以 git clone 取下包含 submodule 的所有內容, 執行:</p>
-<p>git clone --recurse-submodules <a href="https://github.com/mdecourse/newcms.git">https://github.com/mdecourse/newcms.git</a></p>
-<h1>Develop</h1>
-<p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
-<p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
-<p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
+<p>將 <a href="https://github.com/scrum-1/cp2019.git">https://github.com/scrum-1/cp2019.git</a> 設為子模組, 且名稱訂為 scrum1</p>
+<p>之後各組員可以在各自的 cp2019 倉儲中建立 Dart class 程式庫, 然後直接在 cp2019g0 的環境下引用.</p>
+<p><a href="/downloads/scrum1/index.html">scrum1</a></p>
+<p>為何各組員的 cp2019 作為子模組, 需要放在分組網站倉儲 downloads 目錄下?</p><h1>Dart 分組程式任務</h1>
+<h4>如何利用 Dart 程式讀進各班學員名單, 然後採用亂數分組?</h4>
+<p style="padding-left: 30px;">可以將 <a href="https://dartpad.github.io/?id=9f69e77cb456b97cccc8eb5a9dbd991c">https://dartpad.github.io/?id=9f69e77cb456b97cccc8eb5a9dbd991c</a> 寫成函式或 class based 程式嗎?</p>
+<h4>Dart 網際繪圖</h4>
+<p style="padding-left: 30px;">已知可以利用 Dart 與 Html5 canvas <a href="https://dartpad.dartlang.org/embed-html.html?gh_owner=mdecourse&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/roc_flag&amp;theme=dark&amp;run=true">畫出中華民國國旗</a>, 各組可以利用相同模式畫出美國國旗嗎?</p>
+<p style="padding-left: 30px;">假如將各組員的 cp2019, 分別依照學號納為分組倉儲中的子模組, 可以由一位組員在其個人倉儲中建立畫五芒星程式庫, 然後再由分組程式中呼叫引用, 完成美國國旗的繪製?</p>
+<p style="padding-left: 30px;">請問如何將中華民國國旗或美國國旗的繪圖結果, 直接呈現在網頁上?</p>
+<h4>在 SciTE 中執行純 Dart 程式</h4>
+<p style="padding-left: 30px;">如何設定 SciTE, 以便能在 SciTE 中執行 Dart 程式, 並轉為 Javascript</p>
+<p>如何利用 Dart 程式建立 <a href="http://mde.tw/cp2019/content/Task3.html">http://mde.tw/cp2019/content/Task3.html</a> 中的猜數字遊戲?</p>
+<p>如何利用 Dart 程式建立 <a href="https://dartpad.github.io/?id=0c7e4bbb880d11f0335d5b5da49e86db">https://dartpad.github.io/?id=0c7e4bbb880d11f0335d5b5da49e86db</a> 遊戲, 如何將此程式納入網際頁面?</p>
+<p>如何建立 Flutter 網際與手機程式?</p>
+<p></p>
+<p></p>
