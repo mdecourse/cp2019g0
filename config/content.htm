@@ -60,10 +60,34 @@
 <h4>HTML Canvs 教學文件:</h4>
 <p style="padding-left: 30px;"><a href="https://developer.mozilla.org/zh-TW/docs/Web/API/Canvas_API/Tutorial">https://developer.mozilla.org/zh-TW/docs/Web/API/Canvas_API/Tutorial</a></p>
 <h4>學習目標:</h4>
+<p style="padding-left: 30px;">座標轉換:</p>
+<p style="padding-left: 60px;"><a href="https://dartpad.dartlang.org/embed-dart.html?gh_owner=mdecourse&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/xyplot&amp;theme=dark">https://dartpad.dartlang.org/embed-dart.html?gh_owner=mdecourse&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/xyplot&amp;theme=dark</a></p>
 <p style="padding-left: 30px;">繪製美國國旗</p>
-<p style="padding-left: 30px;">青天與滿地紅中的旋轉白日 ROC 國旗動態繪圖</p>
-<h2>猜數字遊戲程式</h2>
-<h2>乒乓球遊戲程式</h2>
+<p style="padding-left: 60px;"><a href="http://www.fascinatedwithsoftware.com/blog/post/2012/11/03/How-to-Draw-an-American-Flag-with-HTML5.aspx">http://www.fascinatedwithsoftware.com/blog/post/2012/11/03/How-to-Draw-an-American-Flag-with-HTML5.aspx</a></p>
+<p style="padding-left: 60px;"><a href="http://joyofprocessing.com/blog/2011/11/how-to-draw-the-usa-flag/">http://joyofprocessing.com/blog/2011/11/how-to-draw-the-usa-flag/</a></p>
+<p style="padding-left: 30px;">青天與滿地紅中的旋轉白日 ROC 國旗動態繪圖</p><h2>猜數字遊戲程式</h2>
+<p><a href="http://mde.tw/cp2019/content/Task3.html">http://mde.tw/cp2019/content/Task3.html</a></p>
+<p>Dart  <a href="https://api.dartlang.org/stable/2.7.0/dart-math/Random-class.html">Random 類別</a>:</p>
+<pre class="brush:dart;auto-links:false;toolbar:false" contenteditable="false">import 'dart:math' as math;
+
+var now = DateTime.now();
+math.Random rand = math.Random(now.millisecondsSinceEpoch);
+int answer;
+
+void main() {
+  for (int i = 0; i &lt; 10; i++) {
+    // random integer from 1 to 100
+    answer = 1 + rand.nextInt(100 - 1);
+    print(answer);
+  }
+}</pre>
+<p>猜數字程式設計流程:</p>
+<p>設法以亂數產生介於 1~100 之間的整數, 作為答案.</p>
+<p>利用 HTML input 表單, 接受使用者輸入所猜的整數</p>
+<p>若所猜的數字大於答案, 回覆所猜的整數太大</p>
+<p>使用者繼續猜</p>
+<p>若所猜的數字小於答案, <span>回覆所猜的整數太小</span></p>
+<p>讓使用者<span>繼續猜, 直到猜對為止.</span></p><h2>乒乓球遊戲程式</h2>
 <h4>Dartpad 版與網際版</h4>
 <h4>手機板</h4>
 <h2>踩地雷遊戲程式</h2>

@@ -155,7 +155,28 @@ img.add_border {
           
         </header>
     <div id="tipue_search_content">HTML Canvs 繪圖程式 << <a href='HTML Canvs 繪圖程式.html'>Previous</a> <a href='乒乓球遊戲程式.html'>Next</a> >> 乒乓球遊戲程式<br /><h1>猜數字遊戲程式</h1>
-<br />HTML Canvs 繪圖程式 << <a href='HTML Canvs 繪圖程式.html'>Previous</a> <a href='乒乓球遊戲程式.html'>Next</a> >> 乒乓球遊戲程式</div>
+<p><a href="http://mde.tw/cp2019/content/Task3.html">http://mde.tw/cp2019/content/Task3.html</a></p>
+<p>Dart  <a href="https://api.dartlang.org/stable/2.7.0/dart-math/Random-class.html">Random 類別</a>:</p>
+<pre class="brush:dart;auto-links:false;toolbar:false" contenteditable="false">import 'dart:math' as math;
+
+var now = DateTime.now();
+math.Random rand = math.Random(now.millisecondsSinceEpoch);
+int answer;
+
+void main() {
+  for (int i = 0; i &lt; 10; i++) {
+    // random integer from 1 to 100
+    answer = 1 + rand.nextInt(100 - 1);
+    print(answer);
+  }
+}</pre>
+<p>猜數字程式設計流程:</p>
+<p>設法以亂數產生介於 1~100 之間的整數, 作為答案.</p>
+<p>利用 HTML input 表單, 接受使用者輸入所猜的整數</p>
+<p>若所猜的數字大於答案, 回覆所猜的整數太大</p>
+<p>使用者繼續猜</p>
+<p>若所猜的數字小於答案, <span>回覆所猜的整數太小</span></p>
+<p>讓使用者<span>繼續猜, 直到猜對為止.</span></p><br />HTML Canvs 繪圖程式 << <a href='HTML Canvs 繪圖程式.html'>Previous</a> <a href='乒乓球遊戲程式.html'>Next</a> >> 乒乓球遊戲程式</div>
         
     <!-- footer -->
       <div class="container">
